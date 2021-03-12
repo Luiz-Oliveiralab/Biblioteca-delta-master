@@ -9,15 +9,15 @@ router.get("/", (req, res) => {
 })
 
 router.get("/usuario", (req, res) => {
-    res.send("usario front")
+    res.render("admin/usuario")
 })
 
 router.get("/usuario/add", (req, res) => {
-    res.send("oi front")    
+    res.render("admin/addusuario")    
 })
 
 router.get("/Graficos",(req, res) =>{
-    res.send("Paginas de grafico")
+    res.render("admin/Graficos")
 })
 
 router.post("/usuario/novo",(req, res) => {
